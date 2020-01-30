@@ -52,7 +52,7 @@ function liriRun(argOne, argTwo) {
             console.log("Song Preview Link: " +data.tracks.items[0].href + "\r\n");
             console.log("Album: " +data.tracks.items[0].album.name + "\r\n");
 
-            var songLogged = "Song Logged" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n";
+            var songLogged = "\n------Song Logged-------" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n";
 
             fs.appendFile("log.txt", songLogged, function (err) {
                 
@@ -75,7 +75,7 @@ function liriRun(argOne, argTwo) {
 
 
 
-            var concertLogged = "Concert Logged" + "\nName of the music Artist: " + artist + "\r\n";
+            var concertLogged = "\n-------Concert Logged--------" + "\nName of the music Artist: " + artist + "\r\n";
 
             fs.appendFile("log.txt", concertLogged, function (err) {
                 
@@ -106,7 +106,7 @@ var movieQueryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apik
             console.log("Actors: " + response.data.Actors + "\r\n");
            
 
-            var movieLogged = "Movie Logged" + "\nMoive title: " + response.data.Title + "\r\n";
+            var movieLogged = "\n--------Movie Logged---------" + "\nMoive title: " + response.data.Title + "\r\nYear of Release: " + response.data.Year;
 
             fs.appendFile("log.txt", movieLogged, function (err) {
                 if(err) throw err;
