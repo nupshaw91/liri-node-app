@@ -1,1 +1,15 @@
 Logs
+--------Movie Logged---------
+Moive title: Thor
+Year of Release: 2011
+-------Concert Logged--------
+Name of the music Artist: dababy
+
+-------Concert Logged--------
+Name of the music Artist: dababy
+
+------Song Logged-------
+Artist: Eminem
+
+------Song Logged-------
+Artist: Backstreet Boys
